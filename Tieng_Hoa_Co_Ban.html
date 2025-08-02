@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Tiếng Hoa Cơ Bản - Có Phát Âm</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f4f4f4; }
+    .card { background: white; padding: 15px; border-radius: 10px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .hanzi { font-size: 24px; font-weight: bold; }
+    .pinyin { color: #333; margin-top: 4px; }
+    .vietnamese { color: #666; font-style: italic; }
+    button { margin-top: 8px; background: #0078D7; color: white; border: none; padding: 6px 12px; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #005fa3; }
+  </style>
+</head>
+<body>
+
+<h1>📘 Tiếng Hoa Cơ Bản – Nhấn 🔊 để nghe</h1>
+
+<div class="card">
+  <div class="hanzi">你好</div>
+  <div class="pinyin">nǐ hǎo</div>
+  <div class="vietnamese">Xin chào</div>
+  <button onclick="speak('你好')">🔊 Nghe</button>
+</div>
+
+<div class="card">
+  <div class="hanzi">你好吗？</div>
+  <div class="pinyin">nǐ hǎo ma?</div>
+  <div class="vietnamese">Bạn khỏe không?</div>
+  <button onclick="speak('你好吗')">🔊 Nghe</button>
+</div>
+
+<div class="card">
+  <div class="hanzi">我很好</div>
+  <div class="pinyin">wǒ hěn hǎo</div>
+  <div class="vietnamese">Tôi rất khỏe</div>
+  <button onclick="speak('我很好')">🔊 Nghe</button>
+</div>
+
+<div class="card">
+  <div class="hanzi">谢谢</div>
+  <div class="pinyin">xiè xie</div>
+  <div class="vietnamese">Cảm ơn</div>
+  <button onclick="speak('谢谢')">🔊 Nghe</button>
+</div>
+
+<div class="card">
+  <div class="hanzi">不客气</div>
+  <div class="pinyin">bú kè qi</div>
+  <div class="vietnamese">Không có chi</div>
+  <button onclick="speak('不客气')">🔊 Nghe</button>
+</div>
+
+<div class="card">
+  <div class="hanzi">对不起</div>
+  <div class="pinyin">duì bù qǐ</div>
+  <div class="vietnamese">Xin lỗi</div>
+  <button onclick="speak('对不起')">🔊 Nghe</button>
+</div>
+
+<div class="card">
+  <div class="hanzi">没关系</div>
+  <div class="pinyin">méi guān xì</div>
+  <div class="vietnamese">Không sao đâu</div>
+  <button onclick="speak('没关系')">🔊 Nghe</button>
+</div>
+
+<div class="card">
+  <div class="hanzi">再见</div>
+  <div class="pinyin">zài jiàn</div>
+  <div class="vietnamese">Tạm biệt</div>
+  <button onclick="speak('再见')">🔊 Nghe</button>
+</div>
+
+<div class="card">
+  <div class="hanzi">请问，厕所在哪里？</div>
+  <div class="pinyin">qǐng wèn, cè suǒ zài nǎ lǐ?</div>
+  <div class="vietnamese">Xin hỏi, nhà vệ sinh ở đâu?</div>
+  <button onclick="speak('请问，厕所在哪里')">🔊 Nghe</button>
+</div>
+
+<div class="card">
+  <div class="hanzi">这个多少钱？</div>
+  <div class="pinyin">zhè ge duō shǎo qián?</div>
+  <div class="vietnamese">Cái này bao nhiêu tiền?</div>
+  <button onclick="speak('这个多少钱')">🔊 Nghe</button>
+</div>
+
+<div class="card">
+  <div class="hanzi">我听不懂</div>
+  <div class="pinyin">wǒ tīng bù dǒng</div>
+  <div class="vietnamese">Tôi không hiểu</div>
+  <button onclick="speak('我听不懂')">🔊 Nghe</button>
+</div>
+
+<script>
+function speak(text) {
+  const msg = new SpeechSynthesisUtterance(text);
+  msg.lang = 'zh-CN';
+  window.speechSynthesis.speak(msg);
+}
+</script>
+
+</body>
+</html>
+<div class="card">
+  <div class="hanzi">你想吃一点点心吗？</div>
+  <div class="pinyin">nǐ xiǎng chī yì diǎn diǎn xīn ma?</div>
+  <div class="vietnamese">Bạn có muốn ăn một ít bánh không?</div>
+  <button onclick="speak('你想吃一点点心吗')">🔊 Nghe</button>
+</div>
+
+<div class="card">
+  <div class="hanzi">你想喝咖啡、白开水还是茶？</div>
+  <div class="pinyin">nǐ xiǎng hē kā fēi, bái kāi shuǐ hái shì chá?</div>
+  <div class="vietnamese">Bạn có muốn uống cà phê, nước lọc hay trà không?</div>
+  <button onclick="speak('你想喝咖啡、白开水还是茶')">🔊 Nghe</button>
+</div>
+
+<div class="card">
+  <div class="hanzi">很高兴见到你！</div>
+  <div class="pinyin">hěn gāo xìng jiàn dào nǐ!</div>
+  <div class="vietnamese">Tôi rất vui khi được gặp bạn!</div>
+  <button onclick="speak('很高兴见到你')">🔊 Nghe</button>
+</div>
+
+<div class="card">
+  <div class="hanzi">请帮我拿盘子、汤匙、碗、叉子。</div>
+  <div class="pinyin">qǐng bāng wǒ ná pán zi, tāng chí, wǎn, chā zi.</div>
+  <div class="vietnamese">Lấy giúp tôi cái đĩa, muỗng, chén, nĩa.</div>
+  <button onclick="speak('请帮我拿盘子、汤匙、碗、叉子')">🔊 Nghe</button>
+</div>
+
+<div class="card">
+  <div class="hanzi">我可以把垃圾放在哪里？</div>
+  <div class="pinyin">wǒ kě yǐ bǎ lā jī fàng zài nǎ lǐ?</div>
+  <div class="vietnamese">Tôi có thể để rác ở đâu?</div>
+  <button onclick="speak('我可以把垃圾放在哪里')">🔊 Nghe</button>
+</div>
+
+<div class="card">
+  <div class="hanzi">我可以帮你什么吗？</div>
+  <div class="pinyin">wǒ kě yǐ bāng nǐ shén me ma?</div>
+  <div class="vietnamese">Tôi có giúp được gì cho bạn không?</div>
+  <button onclick="speak('我可以帮你什么吗')">🔊 Nghe</button>
+</div>
